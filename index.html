@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Ejercicio Tecnico  </title> <!-- titulo de nuestra web. -->
+	</head>
+
+	<body>
+		<!-- etiqueta header 1,  se agrega un titulo a la página. -->
+		<h1> Regionales y Centros de atencion </h1> 
+		 
+		<form name="formulario1"> 
+			<h4> Ingrese su nombre de usuario:  </h4> 
+			<input types = "text" size="24"> <!-- se solicita al usuario su nombre mediante un input de texto. -->
+
+			
+			<h4> Seleccione una regional:  </h4>
+			<select id="Regionales" name="Regionales" onchange="cambiar_Centros()"> 
+
+				<!-- a traves de "onChange" invoco a la funcion realizada en javaScript (cambiar_Centros) a fin de realizar el ejercicio -->
+
+				<!-- mediante la etiqueta select se le pide al usuario que seleccione alguna regional a partir de las siguientes opciones. -->
+			
+				<!-- a continuacion se despliegan las regionales disponibles. La primera opcion existe de guia para que el mismo usuario sepa que debe realizar. A elegirse un mensaje avisara que no se ha seleccionado ninguna regional ("Sin asignar"). -->
+				<option value="0"> Seleccione una regional 
+				<option value="1">Bahia Blanca
+				<option value="2">Chaco
+
+			</select>
+
+			<h4> Centros de atencion disponibles:  </h4>
+			<!-- creo un nuevo select el cual debe ser completado de manera dinamica segun la regional elegida por el usuario-->
+			<select id="CDA"> 	<!-- CDA: Centros de Atencion -->		
+				<option value="-">-</option>
+			</select>
+
+		</form>
+
+
+	<script src = "script.js">  
+	</script>	
+	</body>	
+
+</html>
