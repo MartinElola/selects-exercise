@@ -1,3 +1,3 @@
-# Just an HTML-JS exercice ;)
+# Just an HTML-JS exercise ;)
 
 - Interactive selects with explanation. (Spanish)
